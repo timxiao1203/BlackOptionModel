@@ -6,7 +6,7 @@ Black’s option pricing model, which is in a closed-form formula, can be applie
 
 The matured payoffs is paid at a settlement time T' which is greater than or equal to T . Under the Black-Scholes framework, the key assumption is that, in the risk-neutral measure with respect to the zero bond price matured at T' , T is log-normally distributed with a single parameter X σ , the volatility of the underlying rate X .
 
-Black’s vanilla option pricing model can be applied to pricing a variety of instruments including caps/floors, European swaptions, bond options, bond futures options and IR futures options. In the case of caps/floors and European swaptions1, X is the forward term rate and forward swap rate, respectively. For European bond options, the rate X represents the bond price. For European bond futures options and European IR futures options, X stands for bond futures price and Euro-Dollar futures price, respectively.
+Black’s vanilla option pricing model can be applied to pricing a variety of instruments including caps/floors, European swaptions, bond options, bond futures options and IR futures options. In the case of caps/floors and European swaptions1, X is the forward term rate and forward swap rate, respectively. For European bond options, the rate X represents the bond price (see https://finpricing.com/lib/FiBond.html). For European bond futures options and European IR futures options, X stands for bond futures price and Euro-Dollar futures price, respectively.
 
 In the Black’s model, the fair price for the vanilla European call option as above is computed where F0 is a current expectation of the underlying rate X at maturity, r is the risk-free interest rate, N(⋅) denotes the cumulative distribution function (cdf) for a standard normal random variable and
 
@@ -17,11 +17,3 @@ Similarly, risk numbers for a put option are computed, i.e., Gamma and Vega are 
 The current expectation of an underlying rate at maturity must be known. It may be a current forward term rate, a current forward swap rate, a current forward price or a current futures price, depending upon cases. The volatility of the underlying rate must be provided. Usually, it can be interpolated from a given set of market implied volatilities.
 
 
-
-Reference:
-
-https://finpricing.com/lib/EqRainbow.html
-
-https://zenodo.org/record/6625197#.YqDnLKgpBD8
-
-https://zenodo.org/record/6625197/files/blackModel.pdf
